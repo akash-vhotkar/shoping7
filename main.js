@@ -15,7 +15,7 @@ mongoose.connect(url, { useNewUrlParser: true })
 
 app.use('/', require('./routes/authenticate'))
 app.use("", (req, res) => {
-    res.render("home");
+    res.render("login");
 })
 app.use('/', require('./routes/cart'))
 const port = process.env.PORT || 5000;
